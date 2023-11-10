@@ -6,22 +6,38 @@ NRC: 13930
 FECHA: 09-11-2023
 PROGRAMACION ORIENTADA A OBJETOS
 
+-QUE ES GIT?
 
+Git es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un 
+repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar 
+sin conexión o de forma remota con facilidad. 
 Investigar los comandos de GIT/GITHUB
 
+-QUE ES GITHUB?
+
+GitHub es una plataforma de gestión y organización de proyectos basada en la nube que incorpora las funciones 
+de control de versiones de Git. Es decir que todos los usuarios de GitHub pueden rastrear y gestionar 
+los cambios que se realizan en el código fuente en tiempo real, a la vez que tienen acceso a todas las 
+demás funciones de Git disponibles en el mismo lugar.
+
+COMANDOS DE GIT/GITHUB 
 
 -Configuración Básica:
 
 Configurar Nombre que salen en los commits
 
 	git config --global user.name "dasdo"
+
 Configurar correo electrónico
 
 	git config --global user.email dasdo1@gmail.com
+
 Marco de colores para los comandos.
 
 	git config --global color.ui true
-Iniciando repositorio
+
+-Iniciando repositorio
+
 Iniciamos GIT en la carpeta donde está el proyecto
 
 	git init
@@ -160,22 +176,28 @@ Limpiar todas las ramas eliminadas
 Crea una rama
 
 	git branch <nameBranch>
+
 Lista las sucursales
 
 	git branch
+
 Comando -d elimina el rama y lo une al maestro
 
 	git branch -d <nameBranch>
+
 Eliminar sin preguntar
 
 	git branch -D <nameBranch>
-ETIQUETA GIT
+
+-ETIQUETA GIT
 Muestra una lista de todos los tags.
 
 	git tag
+
 Crea una nueva etiqueta
 
 	git tag -a <verison> - m "esta es la versión x"
+
 REBASE DE GIT
 Los rebase se usan cuando trabajamos con sucursales esto hace que los sucursales se pongan al día con el maestro sin afectar al mismo
 
@@ -225,11 +247,8 @@ Verifica cambios en el repositorio online con el local
 Borrar un archivo del repositorio
 
 	git rm <archivo> 
-Tenedor
-Descargar control remoto de un fork
 
-	git remote add upstream <url>
-Fusionar con master de un fork
 
-	git fetch upstream
-	git merge upstream/master
+
+
+https://gist.github.com/dasdo/9ff71c5c0efa037441b6
